@@ -1,0 +1,10 @@
+5.1. Can you explain the copy (cp ../temp-* .) command used above?
+Copy all the files inside the directory one level above which include/begin with 'temp-'
+5.2. Can you explain why, in this case, we did not have to do git init?
+Since we used a a cloned repository as the base for the current one (it's already one)
+5.3. Can you commit the files copied? What do you need to do? Execute the commands that are needed.
+First, you must add all the copied files to the tracking system using:
+$ git add .
+Then commit all the files using:
+$ git commit * -m "initial commit"
+Afterwards use '$ git status' to confirm that it is stated that there is nothing to commit
